@@ -1,0 +1,174 @@
+"use client";
+import React, { useState, useTransition } from "react";
+import Image from "next/image";
+import TabButton from "./TabButton";
+import { motion } from "framer-motion";
+const AboutSection = () => {
+  const [tab, setTab] = useState("skills");
+  const [isPending, startTransition] = useTransition();
+  const TAB_DATA = [
+    {
+      id: "skills",
+      title: "Skills",
+      content: (
+        <div className="flex w-full">
+          <div className="flex flex-col md:flex-row">
+            <ul className="list-disc pl-2 mr-8">
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+            </ul>
+            <ul className="list-disc pl-2 mr-8">
+              <li>PostgreSQL</li>
+              <li>Next.js</li>
+              <li>Redux</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <ul className="list-disc pl-2 mr-8">
+            <li>Java Script</li>
+            <li>Sequelize</li>
+            <li>Mongoose</li>
+            <li>Tailwind</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+      ),
+    },
+    {
+      id: "education",
+      title: "Education",
+      content: (
+        <ul className="list-disc pl-1">
+          <li>
+            <p className="text-lg font-semibold">
+              Bachelor’s degree in Artificial Intelligence Engineering
+            </p>
+            <p className="text-md text-primary-500 font-bold">
+              Arab International University
+            </p>
+            <p className="text-sm">2018 - 2024</p>
+          </li>
+          <li className="mt-5">
+            <p className="text-lg font-semibold">
+              React.js, Java Script, HTML, CSS
+            </p>
+            <p className="text-md text-primary-500 font-bold">New Horizons</p>
+            <p className="text-sm">2020 - 2023</p>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: "certifications",
+      title: "Certifications",
+      content: (
+        <ul className="list-disc pl-1">
+          <li>
+            <p className="text-lg font-semibold">Java Script, HTML, CSS</p>
+            <p className="text-md text-primary-500 font-bold">New Horizons</p>
+            <p className="text-sm">2020 - 2021</p>
+          </li>
+          <li className="mt-5">
+            <p className="text-lg font-semibold">React.js Development</p>
+            <p className="text-md text-primary-500 font-bold">New Horizons</p>
+            <p className="text-sm">2022 - 2023</p>
+          </li>
+        </ul>
+      ),
+    },
+    {
+      id: "experience",
+      title: "Experience",
+      content: (
+        <ul className="list-disc pl-2">
+          <li>
+            <p className="text-lg font-semibold">
+              React.js, HTML, CSS, JavaScript
+            </p>
+            <p className="text-md text-primary-500 font-bold">GrayScale</p>
+            <p className="text-sm">2020 - 2021</p>
+          </li>
+          <li className="mt-5">
+            <p className="text-lg font-semibold">React.js Developer</p>
+            <p className="text-md text-primary-500 font-bold">Orkabit</p>
+            <p className="text-sm">2023 - present</p>
+          </li>
+        </ul>
+      ),
+    },
+  ];
+  const handleTabChange = (id) => {
+    startTransition(() => {
+      setTab(id);
+    });
+  };
+  return (
+    <section className="mt-5">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5, x: -500 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 5 }}
+        >
+          <Image
+            src="/images/About_macbook_port.jpg"
+            width={500}
+            height={800}
+            alt="About"
+          />
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5, x: 500 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 5 }}
+          className="mt-4 md:mt-0 text-left flex flex-col h-full"
+        >
+          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <p className="text-base lg:text-lg">
+            I am a full stack web developer with a passion for creating
+            interactive and responsive web applications. I have experience
+            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
+            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+            looking to expand my knowledge and skill set. I am a team player and
+            I am excited to work with others to create amazing applications.
+          </p>
+          <div className="flex flex-row mt-8 justify-start">
+            <TabButton
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
+            >
+              Skills
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
+            >
+              Education
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
+            >
+              Experience
+            </TabButton>
+            {/* <TabButton
+              selectTab={() => handleTabChange("certifications")}
+              active={tab === "certifications"}
+            >
+              Certifications
+            </TabButton> */}
+          </div>
+          <div className="mt-8">
+            {TAB_DATA.find((t) => t.id === tab).content}
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;
