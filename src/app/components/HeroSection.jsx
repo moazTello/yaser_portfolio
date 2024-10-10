@@ -96,7 +96,8 @@ const HeroSection = () => {
         >
           <div className="w-[300px] h-[300px] relative lg:w-[400px] lg:h-[400px] rounded-full">
             <Image
-              src="/images/moaz3.jpg"
+              // src="/images/moaz3.jpg"
+              src="/images/hero-image.png"
               alt="moaz avatar"
               width={500}
               height={800}

@@ -30,24 +30,20 @@ const EmailSection = () => {
       // Body of the request is the JSON data we created above.
       body: JSONdata,
     };
-
     const response = await fetch(endpoint, options);
     const resData = await response.json();
 
     try {
-      await fetch(
-        "https://api.telegram.org/bot8041290817:AAEpenbNcy9KnQZEzUpGgCtg5qDU1Ym0yng/sendMessage",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            chat_id: 1018056393,
-            text: `Sender : ${data.email} \nSubject : ${data.subject} \nMessage : ${data.message}`,
-          }),
-        }
-      );
+      await fetch(`${process.env.NEXT_PUBLIC_TELEGRAM_BOT}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID,
+          text: `Sender : ${data.email} \nSubject : ${data.subject} \nMessage : ${data.message}`,
+        }),
+      });
     } catch (error) {
       console.log(error);
     }
