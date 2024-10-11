@@ -4,10 +4,10 @@ import GithubIcon from "../../../public/github-icon.svg";
 import LinkedInIcon from "../../../public/linkedin-icon.svg";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 const EmailSection = () => {
   const emailRef = useRef(null);
-  const isInview = useInView(emailRef);
+  const isInview = useInView(emailRef, { once: true });
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -54,12 +54,12 @@ const EmailSection = () => {
     }
   };
   const variants = {
-    initial: { opacity: 0, scale: 0.5, x: 500 },
-    animate: { opacity: 1, scale: 1, x: 0 },
+    initial: { opacity: 0, scale: 0.5, y: 50 },
+    animate: { opacity: 1, scale: 1, y: 0 },
   };
   const variants2 = {
-    initial: { opacity: 0, scale: 0.5, x: -500 },
-    animate: { opacity: 1, scale: 1, x: 0 },
+    initial: { opacity: 0, scale: 0.5, y: -50 },
+    animate: { opacity: 1, scale: 1, y: 0 },
   };
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">

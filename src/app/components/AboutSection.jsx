@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useTransition } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import TabButton from "./TabButton";
 import { motion } from "framer-motion";
 const AboutSection = () => {
@@ -110,8 +110,8 @@ const AboutSection = () => {
     <section className="mt-5">
       <div className="md:grid md:grid-cols-2 gap-8 items-center px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
         <motion.div
-          initial={{ opacity: 0, scale: 0.5, x: -500 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.5, y: -50 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 5 }}
         >
           <Image
@@ -122,8 +122,8 @@ const AboutSection = () => {
           />
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.5, x: 500 }}
-          animate={{ opacity: 1, scale: 1, x: 0 }}
+          initial={{ opacity: 0, scale: 0.5, y: 50 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 5 }}
           className="mt-4 md:mt-0 text-left flex flex-col h-full"
         >

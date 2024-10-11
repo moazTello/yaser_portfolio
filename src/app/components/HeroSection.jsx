@@ -1,10 +1,20 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 const HeroSection = () => {
   const [textColor, setTextColor] = useState("text-white");
+  const handleDownload = () => {
+    const fileUrl = "/MHD MOAZ TELLO _2.pdf";
+    const fileName = "Mhd Moaz Tello.pdf";
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <section className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
@@ -81,7 +91,10 @@ const HeroSection = () => {
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-800 via-primary-500 to-primary-200 text-white  bg-white hover:bg-slate-200">
               Hire Me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 bg-gradient-to-br from-primary-800 via-primary-500 to-primary-200 mt-3 text-white">
+            <button
+              onClick={handleDownload}
+              className="px-1 py-1 w-full sm:w-fit rounded-full bg-transparent outline-none hover:bg-slate-800 bg-gradient-to-br from-primary-800 via-primary-500 to-primary-200 mt-3 text-white"
+            >
               <span className="block px-5 py-2 w-full h-full rounded-full bg-[#121212] hover:bg-slate-800">
                 Download CV
               </span>
@@ -94,14 +107,16 @@ const HeroSection = () => {
           transition={{ duration: 5 }}
           className="col-span-5 place-self-center mt-24 lg:mt-4"
         >
-          <div className="w-[300px] h-[300px] relative lg:w-[400px] lg:h-[400px] rounded-full">
+          <div className="w-[240px] h-[300px] relative lg:w-[340px] lg:h-[400px] rounded-full">
             <Image
-              // src="/images/moaz3.jpg"
-              src="/images/hero-image.png"
+              src="/images/moaz.jpeg"
+              // src="/images/hero-image.png"
               alt="moaz avatar"
-              width={500}
-              height={800}
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-2xl"
+              // width={500}
+              // height={800}
+              objectFit="cover" objectPosition="center" layout="fill"
+              // className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-2xl"
+              className="rounded-2xl"
             />
           </div>
         </motion.div>

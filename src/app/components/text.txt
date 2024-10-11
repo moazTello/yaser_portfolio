@@ -1,0 +1,18 @@
+Bus Booking Web App
+
+A web application designed to streamline the booking process for bus trips across the Syrian Arab Republic.
+The platform offers bilingual support (Arabic and English) and integrates electronic payment systems to provide users with a seamless and efficient booking experience.
+Users can easily search for available bus routes, select their preferred travel times, and secure their tickets online.
+
+Key Features:
+
+Bilingual Support: Full support for Arabic and English languages to accommodate a diverse user base.
+Secure Payments: Integrated electronic payment gateway for quick and secure transactions.
+Real-Time Availability: Users can view real-time bus schedules and seat availability.
+Responsive Design: Optimized for various screen sizes and devices for easy access from anywhere.
+Tech Stack: Built with React.js, ensuring fast rendering, smooth performance.
+
+Challenges:
+
+Ensuring a seamless experience across different languages and RTL (right-to-left) support for Arabic.
+Implementing secure and reliable electronic payment integration.
