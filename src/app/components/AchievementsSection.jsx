@@ -49,14 +49,13 @@ const AchievementsSection = () => {
                   className="text-white text-4xl font-bold"
                   transitions={(index) => ({
                     type: "spring",
-                    duration: index + 5,
+                    duration: index + 1,
                   })}
                   configs={(_, index) => {
                     return {
                       mass: 5,
                       friction: 100,
                       tensions: 140 * (index + 1),
-                      
                     };
                   }}
                 />

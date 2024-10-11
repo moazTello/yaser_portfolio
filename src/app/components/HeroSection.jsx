@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/legacy/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const HeroSection = () => {
   const [textColor, setTextColor] = useState("text-white");
   const handleDownload = () => {
@@ -79,18 +80,26 @@ const HeroSection = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            Artificial Intelligence Engineer background in creating and LinkedIn
-            executing innovative software solutions to enhance business
-            productivity. Highly experienced in all aspects of the software
-            development lifecycle, from concept through to development GitHub
-            and delivery, Experience in providing successful solutions and
-            solving problems in less time and less effort.
-          </p>
+          <h5 className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
+            <TypeAnimation
+              sequence={[
+                1500,
+                "Artificial Intelligence Engineer background in creating and LinkedIn\nexecuting innovative software solutions to enhance business\nproductivity. Highly experienced in all aspects of the software\ndevelopment lifecycle, from concept through to development GitHub\nand delivery, Experience in providing successful solutions and\nsolving problems in less time and less effort.",
+              ]}
+              wrapper="p"
+              speed={80}
+              cursor={false}
+              //   style={{ fontSize: "2em", display: "inline-block" }}
+              repeat={0}
+            />
+          </h5>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-800 via-primary-500 to-primary-200 text-white  bg-white hover:bg-slate-200">
+            <Link
+              href="https://www.linkedin.com/in/mmt-tello-9b0a4026a/"
+              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-800 via-primary-500 to-primary-200 text-white hover:text-slate-300 outline-none border-none"
+            >
               Hire Me
-            </button>
+            </Link>
             <button
               onClick={handleDownload}
               className="px-1 py-1 w-full sm:w-fit rounded-full bg-transparent outline-none hover:bg-slate-800 bg-gradient-to-br from-primary-800 via-primary-500 to-primary-200 mt-3 text-white"
@@ -114,7 +123,9 @@ const HeroSection = () => {
               alt="moaz avatar"
               // width={500}
               // height={800}
-              objectFit="cover" objectPosition="center" layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+              layout="fill"
               // className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-2xl"
               className="rounded-2xl"
             />
