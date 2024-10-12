@@ -364,53 +364,94 @@ const ProjectsSection = () => {
       title: "WASSELNY",
       description: (
         <div className="flex w-full md:pl-4 flex-col">
-          <p className="mt-4 text-primary-500">Bus Booking Web App</p>
+          <p className="mt-4 text-primary-500">Taxi Booking App</p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
-              A web application designed to streamline the booking process for
-              bus trips across the Syrian Arab Republic.
+              This mobile application facilitates the process of booking taxis,
+              providing a seamless interaction between clients, drivers, and
+              admins.
             </li>
             <li>
-              The platform offers bilingual support (Arabic and English) and
-              integrates electronic payment systems to provide users with a
-              seamless and efficient booking experience.
+              It allows clients to search for available drivers, track their
+              location, and manage trips, while drivers can accept requests and
+              handle multiple rides.
             </li>
             <li>
-              Users can easily search for available bus routes, select their
-              preferred travel times, and secure their tickets online.
+              Admins oversee the entire ecosystem, managing users and resolving
+              issues.
             </li>
           </ul>
           <p className="mt-4 text-slate-100">Key Features:</p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
-              Bilingual Support: Full support for Arabic and English languages
-              to accommodate a diverse user base.
+              User Authentication: Clients, drivers, and admins can sign up and
+              sign in securely.
             </li>
             <li>
-              Secure Payments: Integrated electronic payment gateway for quick
-              and secure transactions.
+              Driver Availability & Request Handling: Clients can search for
+              available taxi drivers, send ride requests, and drivers can either
+              accept or reject them.
             </li>
             <li>
-              Real-Time Availability: Users can view real-time bus schedules and
-              seat availability.
+              Real-Time Location Tracking: Both clients and drivers can view
+              each other’s locations on a map during a trip.
             </li>
             <li>
-              Responsive Design: Optimized for various screen sizes and devices
-              for easy access from anywhere.
+              Trip Management: Clients can select a destination, see the
+              estimated cost, and track the driver’s location. Drivers can mark
+              trips as completed, enabling them to receive new requests.
             </li>
             <li>
-              Tech Stack: Built with React.js, ensuring fast rendering, smooth
-              performance.
+              Issue Reporting: Both drivers and clients can report problems
+              encountered during trips.
+            </li>
+            <li>
+              Order & History Tracking: Clients and drivers can view their past
+              trips and order history.
+            </li>
+            <li>
+              Admin Dashboard: Admins can manage users (clients and drivers),
+              approve driver requests to join, and view reports on issues from
+              both clients and drivers.
+            </li>
+          </ul>
+          <p className="mt-4 text-slate-100">Tech Stack:</p>
+          <ul className="list-disc px-2 mt-2 ml-2">
+            <li>
+              React Native: Ensures a smooth and responsive user interface for
+              mobile devices.
+            </li>
+            <li>Expo-Router: Facilitates navigation within the application.</li>
+            <li>
+              Maps Integration: Allows real-time location tracking and
+              destination selection for clients and drivers.
+            </li>
+            <li>
+              useContext: Manages global state across different components.
+            </li>
+            <li>Axios: Efficient handling of API requests.</li>
+            <li>
+              Nativewind: Provides styling solutions for the mobile interface.
+            </li>
+            <li>
+              Expo Image Picker: Enables users to upload images, such as driver
+              documents or profile photos.
             </li>
           </ul>
           <p className="mt-4 text-slate-100">Challenges:</p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
-              Ensuring a seamless experience across different languages and RTL
-              (right-to-left) support for Arabic.
+              Real-Time Tracking: Ensuring accurate, real-time location updates
+              for both clients and drivers.
             </li>
             <li>
-              Implementing secure and reliable electronic payment integration.
+              Request Flow: Managing the lifecycle of ride requests, from
+              searching to trip completion, while maintaining smooth
+              interactions between clients and drivers.
+            </li>
+            <li>
+              User Management: Efficiently handling driver approvals, client
+              requests, and issue tracking within the admin panel.
             </li>
           </ul>
         </div>
@@ -425,53 +466,85 @@ const ProjectsSection = () => {
       title: "FUSHA",
       description: (
         <div className="flex w-full md:pl-4 flex-col">
-          <p className="mt-4 text-primary-500">Bus Booking Web App</p>
+          <p className="mt-4 text-primary-500">Tour Booking Web App</p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
-              A web application designed to streamline the booking process for
-              bus trips across the Syrian Arab Republic.
+              This web application offers users the ability to explore exciting
+              tours to destinations around the world.
             </li>
             <li>
-              The platform offers bilingual support (Arabic and English) and
-              integrates electronic payment systems to provide users with a
-              seamless and efficient booking experience.
+              Clients can browse tours, view key details such as dates,
+              locations, and pricing, and easily connect with trip organizers
+              for booking.
             </li>
             <li>
-              Users can easily search for available bus routes, select their
-              preferred travel times, and secure their tickets online.
+              The platform also provides personalized tour recommendations based
+              on users’ previous bookings, ensuring a tailored travel
+              experience.
             </li>
           </ul>
           <p className="mt-4 text-slate-100">Key Features:</p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
-              Bilingual Support: Full support for Arabic and English languages
-              to accommodate a diverse user base.
+              Tour Listings: Clients can browse tours to various destinations,
+              with details on the date, location, and cost of each tour.
             </li>
             <li>
-              Secure Payments: Integrated electronic payment gateway for quick
-              and secure transactions.
+              Organizer Connection: Clients can directly connect with tour
+              organizers to book trips and ask questions.
             </li>
             <li>
-              Real-Time Availability: Users can view real-time bus schedules and
-              seat availability.
+              Personalized Recommendations: The app suggests trips based on the
+              client's past travel history, helping them discover new
+              destinations that suit their preferences.
             </li>
             <li>
-              Responsive Design: Optimized for various screen sizes and devices
-              for easy access from anywhere.
+              Multi-Language Support: The app offers multilingual support,
+              allowing users to switch between languages via i18-next
+              integration.
+            </li>
+          </ul>
+          <p className="mt-4 text-slate-100">Tech Stack:</p>
+          <ul className="list-disc px-2 mt-2 ml-2">
+            <li>React.js: Provides a fast and interactive user interface.</li>
+            <li>
+              useEffect, useState, useMemo: Handle application lifecycle, state
+              management, and performance optimization.
             </li>
             <li>
-              Tech Stack: Built with React.js, ensuring fast rendering, smooth
-              performance.
+              Custom Hooks: Improve reusability and functionality across
+              components.
+            </li>
+            <li>
+              useContext: Streamlines state management for global components.
+            </li>
+            <li>
+              react-router-dom: Manages navigation between different sections of
+              the app.
+            </li>
+            <li>
+              Axios: Handles API requests for fetching tour details and
+              recommendations.
+            </li>
+            <li>
+              i18-next: Enables multi-language support, ensuring the app is
+              accessible to a global audience.
             </li>
           </ul>
           <p className="mt-4 text-slate-100">Challenges:</p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
-              Ensuring a seamless experience across different languages and RTL
-              (right-to-left) support for Arabic.
+              Recommendation Engine: Providing accurate and relevant trip
+              recommendations based on past bookings.
             </li>
             <li>
-              Implementing secure and reliable electronic payment integration.
+              Seamless Booking: Ensuring smooth and intuitive interactions
+              between clients and organizers for a hassle-free booking
+              experience.
+            </li>
+            <li>
+              Scalability: Supporting multiple languages and handling large
+              amounts of tour data without compromising performance.
             </li>
           </ul>
         </div>
@@ -486,7 +559,7 @@ const ProjectsSection = () => {
       title: "SPACE TIME",
       description: (
         <div className="flex w-full md:pl-4 flex-col">
-          <p className="mt-4 text-primary-500">Bus Booking Web App</p>
+          <p className="mt-4 text-primary-500">Portfolio</p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
               A web application designed to streamline the booking process for
@@ -544,7 +617,7 @@ const ProjectsSection = () => {
     },
   ];
   const projectsRef = useRef(null);
-  const isInview = useInView(projectsRef, { once: true });
+  const isInview = useInView(projectsRef);
   const [tag, setTag] = useState("All");
   const handleTagChange = (newTag) => {
     setTag(newTag);
@@ -553,8 +626,8 @@ const ProjectsSection = () => {
     project.tag.includes(tag)
   );
   const variants = {
-    initial: { x: 100, y: 50, opacity: 0 },
-    animate: { x: 0, y: 0, opacity: 1 },
+    initial: { scale: 0.5, y: 50, opacity: 0 },
+    animate: { scale: 1, y: 0, opacity: 1 },
   };
   return (
     <section>
@@ -583,8 +656,10 @@ const ProjectsSection = () => {
           isSelected={tag === "Design"}
         /> */}
       </div>
-      {/* <ul ref={projectsRef} className="grid md:grid-cols-2 gap-8 md:gap-12"> */}
-      <ul ref={projectsRef}>
+      <ul ref={projectsRef} className="grid md:grid-cols-2 gap-8 md:gap-12">
+        {/* <ul
+       ref={projectsRef}
+       > */}
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
@@ -594,6 +669,7 @@ const ProjectsSection = () => {
             transition={{ duration: 1, delay: index * 0.8 }}
           >
             <ProjectCard
+              // ref={projectsRef}
               // key={project.id}
               title={project.title}
               imageUrl={project.image}

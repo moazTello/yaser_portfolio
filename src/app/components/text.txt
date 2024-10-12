@@ -50,3 +50,4 @@ Challenges:
 Real-Time Inventory and Cash Tracking: Ensuring accurate updates to inventory levels and cashbox amounts in real time.
 Seamless Invoice Generation: Sending invoices to Telegram and printing with thermal printers efficiently.
 Data Accuracy: Ensuring accurate calculations for monthly profits and cash flow management across the system.
+

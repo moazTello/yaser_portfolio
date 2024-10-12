@@ -110,24 +110,10 @@ const AboutSection = () => {
     <section className="mt-5">
       <div className="md:grid md:grid-cols-2 gap-8 items-center px-4 py-8 xl:gap-16 sm:py-16 xl:px-16">
         <motion.div
-          initial={{ opacity: 0, scale: 0.5, y: -50 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 5 }}
-        >
-          <Image
-            src="/images/About_macbook_port.jpg"
-            width={500}
-            height={650}
-            // objectFit="cover" objectPosition="center"
-            // layout="fill"
-            alt="About"
-          />
-        </motion.div>
-        <motion.div
           initial={{ opacity: 0, scale: 0.5, y: 50 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 5 }}
-          className="mt-4 md:mt-0 text-left flex flex-col h-full"
+          className="mt-4 md:mt-0 text-left order-first md:order-last flex flex-col h-full"
         >
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base text-[#ADB7BE] lg:text-lg">
@@ -165,9 +151,24 @@ const AboutSection = () => {
               Certifications
             </TabButton> */}
           </div>
-          <div className="mt-8">
+          <div className="mt-8 mb-10 md:mb-0">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
+        </motion.div>
+        <motion.div
+          className="md:order-first order-last"
+          initial={{ opacity: 0, scale: 0.5, y: -50 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 5 }}
+        >
+          <Image
+            src="/images/About_macbook_port.jpg"
+            width={500}
+            height={650}
+            // objectFit="cover" objectPosition="center"
+            // layout="fill"
+            alt="About"
+          />
         </motion.div>
       </div>
     </section>
