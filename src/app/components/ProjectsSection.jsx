@@ -559,53 +559,62 @@ const ProjectsSection = () => {
       title: "SPACE TIME",
       description: (
         <div className="flex w-full md:pl-4 flex-col">
-          <p className="mt-4 text-primary-500">Portfolio</p>
+          <p className="mt-4 text-primary-500">
+            Design Company Portfolio Website
+          </p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
-              A web application designed to streamline the booking process for
-              bus trips across the Syrian Arab Republic.
+              This portfolio website showcases the services and expertise of a
+              design company, offering a sleek and visually appealing platform
+              for potential clients to explore their work and connect via social
+              media.
             </li>
             <li>
-              The platform offers bilingual support Arabic and English and
-              integrates electronic payment systems to provide users with a
-              seamless and efficient booking experience.
-            </li>
-            <li>
-              Users can easily search for available bus routes, select their
-              preferred travel times, and secure their tickets online.
+              The website is designed with a strong focus on aesthetics and user
+              experience, ensuring that visitors can easily navigate and
+              discover the company's offerings.
             </li>
           </ul>
           <p className="mt-4 text-slate-100">Key Features:</p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
-              Bilingual Support: Full support for Arabic and English languages
-              to accommodate a diverse user base.
+              Service Showcase: The website highlights the company's range of
+              design services in a visually engaging format.
             </li>
             <li>
-              Secure Payments: Integrated electronic payment gateway for quick
-              and secure transactions.
+              Social Media Integration: Direct links to the company’s social
+              media accounts, allowing visitors to follow and connect with the
+              brand.
             </li>
             <li>
-              Real-Time Availability: Users can view real-time bus schedules and
-              seat availability.
+              Responsive Design: Optimized for both desktop and mobile devices,
+              ensuring a seamless experience across different screen sizes.
+            </li>
+          </ul>
+          <p className="mt-4 text-slate-100">Tech Stack:</p>
+          <ul className="list-disc px-2 mt-2 ml-2">
+            <li>
+              Bootstrap 5: Provides a responsive, mobile-first layout with
+              built-in components and a modern design.
             </li>
             <li>
-              Responsive Design: Optimized for various screen sizes and devices
-              for easy access from anywhere.
+              HTML & CSS: Customizes the structure and style of the website,
+              creating a unique and visually appealing design.
             </li>
             <li>
-              Tech Stack: Built with React.js, ensuring fast rendering, smooth
-              performance.
+              Beautiful Design: Focused on clean, modern aesthetics that reflect
+              the professionalism of the design company.
             </li>
           </ul>
           <p className="mt-4 text-slate-100">Challenges:</p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
-              Ensuring a seamless experience across different languages and RTL
-              right-to-left support for Arabic.
+              Aesthetic Consistency: Ensuring the design is both visually
+              appealing and functional across various devices and screen sizes.
             </li>
             <li>
-              Implementing secure and reliable electronic payment integration.
+              Responsive Layout: Leveraging Bootstrap 5 to create a smooth,
+              responsive experience without sacrificing design quality.
             </li>
           </ul>
         </div>

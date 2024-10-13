@@ -17,7 +17,7 @@ const HeroSection = () => {
     document.body.removeChild(link);
   };
   return (
-    <section className="lg:py-16">
+    <section id="home" className="lg:py-16">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -26,9 +26,13 @@ const HeroSection = () => {
           className="col-span-7 place-self-center md:self-center text-center sm:text-left z-10"
         >
           <h1
-            className={`${textColor} text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700 text-4xl sm:text-5xl lg:text-6xl mb-4 font-extrabold pb-4`}
+            // className={`${textColor} text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700 text-4xl sm:text-5xl lg:text-6xl mb-4 font-extrabold pb-4`}
+            className={`${textColor} text-4xl sm:text-5xl lg:text-6xl mb-4 font-extrabold pb-4`}
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-700 via-primary-500 to-primary-200">
+            <span
+              // className="text-transparent bg-clip-text bg-gradient-to-r from-primary-700 via-primary-500 to-primary-200"
+              className="text-primary-500"
+            >
               {/* Hello, I'm{" "} */}
               <TypeAnimation
                 sequence={["Hello, I'm "]}
@@ -36,6 +40,7 @@ const HeroSection = () => {
                 speed={200}
                 //   style={{ fontSize: "2em", display: "inline-block" }}
                 repeat={0}
+                cursor={false}
               />
             </span>
             <br />
@@ -45,14 +50,16 @@ const HeroSection = () => {
                 "Moaz",
                 () =>
                   setTextColor(
-                    "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
+                    // "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
+                    "text-primary-500"
                   ),
                 2000,
                 () => setTextColor("text-white"),
                 "Web Developer",
                 () =>
                   setTextColor(
-                    "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
+                    // "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
+                    "text-primary-500"
                   ),
 
                 1500,
@@ -60,17 +67,17 @@ const HeroSection = () => {
                 "Mobile Developer",
                 () =>
                   setTextColor(
-                    "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
+                    // "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
+                    "text-primary-500"
                   ),
-
                 1500,
                 () => setTextColor("text-white"),
                 "UI/UX Designer",
                 () =>
                   setTextColor(
-                    "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
+                    // "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
+                    "text-primary-500"
                   ),
-
                 1500,
                 () => setTextColor("text-white"),
               ]}
