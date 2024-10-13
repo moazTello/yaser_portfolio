@@ -656,10 +656,8 @@ const ProjectsSection = () => {
           isSelected={tag === "Design"}
         /> */}
       </div>
-      <ul ref={projectsRef} className="grid md:grid-cols-2 gap-8 md:gap-12">
-        {/* <ul
-       ref={projectsRef}
-       > */}
+      {/* <ul ref={projectsRef} className="grid md:grid-cols-4 gap-2 md:gap-12"> */}
+      <ul ref={projectsRef}>
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}

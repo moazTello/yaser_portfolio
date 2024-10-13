@@ -96,6 +96,7 @@ const HeroSection = () => {
           <div className="w-full grid md:grid-cols-2 gap-0">
             <Link
               href="https://www.linkedin.com/in/mmt-tello-9b0a4026a/"
+              target="_blank"
               className="px-10 py-3 max-h-[50px] flex justify-center items-center w-full rounded-full bg-gradient-to-br from-primary-800 via-primary-500 to-primary-200 text-white hover:text-slate-300 outline-none border-none"
             >
               Hire Me
