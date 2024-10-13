@@ -572,14 +572,14 @@ const ProjectsSection = () => {
             <li>
               The website is designed with a strong focus on aesthetics and user
               experience, ensuring that visitors can easily navigate and
-              discover the company's offerings.
+              discover the company&apos;s offerings.
             </li>
           </ul>
           <p className="mt-4 text-slate-100">Key Features:</p>
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
-              Service Showcase: The website highlights the company's range of
-              design services in a visually engaging format.
+              Service Showcase: The website highlights the company&apos;s range
+              of design services in a visually engaging format.
             </li>
             <li>
               Social Media Integration: Direct links to the company’s social
