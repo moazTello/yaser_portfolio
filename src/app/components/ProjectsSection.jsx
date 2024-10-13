@@ -137,8 +137,8 @@ const ProjectsSection = () => {
             </li>
             <li>
               Invoice Generation: Invoices are generated for every sale, sent to
-              the business owner's Telegram account, and printed via a thermal
-              printer using ESC/POS.
+              the business owner&apos;s Telegram account, and printed via a
+              thermal printer using ESC/POS.
             </li>
             <li>
               Admin Dashboard: Admins can export invoices to an Excel file, view
@@ -495,7 +495,7 @@ const ProjectsSection = () => {
             </li>
             <li>
               Personalized Recommendations: The app suggests trips based on the
-              client's past travel history, helping them discover new
+              client&apos;s past travel history, helping them discover new
               destinations that suit their preferences.
             </li>
             <li>
