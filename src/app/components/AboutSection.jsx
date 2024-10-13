@@ -11,7 +11,7 @@ const AboutSection = () => {
       id: "skills",
       title: "Skills",
       content: (
-        <div className="flex w-full">
+        <div className="flex text-[#edf1f4] w-full">
           <div className="flex flex-col md:flex-row">
             <ul className="list-disc pl-2 mr-8">
               <li>React.js</li>
@@ -42,7 +42,7 @@ const AboutSection = () => {
       id: "education",
       title: "Education",
       content: (
-        <ul className="list-disc pl-1">
+        <ul className="list-disc text-[#edf1f4] pl-1">
           <li>
             <p className="text-lg font-semibold">
               Bachelor’s degree in Artificial Intelligence Engineering
@@ -50,14 +50,14 @@ const AboutSection = () => {
             <p className="text-md text-primary-500 font-bold">
               Arab International University
             </p>
-            <p className="text-sm">2018 - 2024</p>
+            <p className="text-sm text-[#ADB7BE]">2018 - 2024</p>
           </li>
           <li className="mt-5">
             <p className="text-lg font-semibold">
               React.js, Java Script, HTML, CSS
             </p>
             <p className="text-md text-primary-500 font-bold">New Horizons</p>
-            <p className="text-sm">2020 - 2023</p>
+            <p className="text-sm text-[#ADB7BE]">2020 - 2023</p>
           </li>
         </ul>
       ),
@@ -66,16 +66,16 @@ const AboutSection = () => {
       id: "certifications",
       title: "Certifications",
       content: (
-        <ul className="list-disc pl-1">
+        <ul className="list-disc text-[#edf1f4] pl-1">
           <li>
             <p className="text-lg font-semibold">Java Script, HTML, CSS</p>
             <p className="text-md text-primary-500 font-bold">New Horizons</p>
-            <p className="text-sm">2020 - 2021</p>
+            <p className="text-sm text-[#ADB7BE]">2020 - 2021</p>
           </li>
           <li className="mt-5">
             <p className="text-lg font-semibold">React.js Development</p>
             <p className="text-md text-primary-500 font-bold">New Horizons</p>
-            <p className="text-sm">2022 - 2023</p>
+            <p className="text-sm text-[#ADB7BE]">2022 - 2023</p>
           </li>
         </ul>
       ),
@@ -84,18 +84,18 @@ const AboutSection = () => {
       id: "experience",
       title: "Experience",
       content: (
-        <ul className="list-disc pl-2">
+        <ul className="list-disc text-[#edf1f4] pl-2">
           <li>
             <p className="text-lg font-semibold">
               React.js, HTML, CSS, JavaScript
             </p>
             <p className="text-md text-primary-500 font-bold">GrayScale</p>
-            <p className="text-sm">2020 - 2021</p>
+            <p className="text-sm text-[#ADB7BE]">2020 - 2021</p>
           </li>
           <li className="mt-5">
             <p className="text-lg font-semibold">React.js Developer</p>
             <p className="text-md text-primary-500 font-bold">Orkabit</p>
-            <p className="text-sm">2023 - present</p>
+            <p className="text-sm text-[#ADB7BE]">2023 - present</p>
           </li>
         </ul>
       ),

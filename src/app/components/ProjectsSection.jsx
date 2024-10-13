@@ -18,7 +18,7 @@ const ProjectsSection = () => {
               bus trips across the Syrian Arab Republic.
             </li>
             <li>
-              The platform offers bilingual support (Arabic and English) and
+              The platform offers bilingual support Arabic and English and
               integrates electronic payment systems to provide users with a
               seamless and efficient booking experience.
             </li>
@@ -88,7 +88,7 @@ const ProjectsSection = () => {
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
               Ensuring a seamless experience across different languages and RTL
-              (right-to-left) support for Arabic.
+              right-to-left support for Arabic.
             </li>
             <li>
               Implementing secure and reliable electronic payment integration.
@@ -137,7 +137,7 @@ const ProjectsSection = () => {
             </li>
             <li>
               Invoice Generation: Invoices are generated for every sale, sent to
-              the business owner’s Telegram account, and printed via a thermal
+              the business owner's Telegram account, and printed via a thermal
               printer using ESC/POS.
             </li>
             <li>
@@ -410,7 +410,7 @@ const ProjectsSection = () => {
               trips and order history.
             </li>
             <li>
-              Admin Dashboard: Admins can manage users (clients and drivers),
+              Admin Dashboard: Admins can manage users clients and drivers,
               approve driver requests to join, and view reports on issues from
               both clients and drivers.
             </li>
@@ -566,7 +566,7 @@ const ProjectsSection = () => {
               bus trips across the Syrian Arab Republic.
             </li>
             <li>
-              The platform offers bilingual support (Arabic and English) and
+              The platform offers bilingual support Arabic and English and
               integrates electronic payment systems to provide users with a
               seamless and efficient booking experience.
             </li>
@@ -602,7 +602,7 @@ const ProjectsSection = () => {
           <ul className="list-disc px-2 mt-2 ml-2">
             <li>
               Ensuring a seamless experience across different languages and RTL
-              (right-to-left) support for Arabic.
+              right-to-left support for Arabic.
             </li>
             <li>
               Implementing secure and reliable electronic payment integration.
@@ -617,7 +617,7 @@ const ProjectsSection = () => {
     },
   ];
   const projectsRef = useRef(null);
-  const isInview = useInView(projectsRef);
+  const isInview = useInView(projectsRef, { once: true });
   const [tag, setTag] = useState("All");
   const handleTagChange = (newTag) => {
     setTag(newTag);
