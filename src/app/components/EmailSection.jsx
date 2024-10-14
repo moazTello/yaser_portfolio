@@ -96,10 +96,7 @@ const EmailSection = () => {
           >
             <Image src={LinkedInIcon} alt="Linked in" />
           </Link>
-          <Link
-            target="_blank"
-            href="https://www.linkedin.com/in/mmt-tello-9b0a4026a/"
-          >
+          <Link target="_blank" href="https://wa.me/+963968767511">
             <Image src={WhatsApp} alt="Linked in" />
           </Link>
         </div>
