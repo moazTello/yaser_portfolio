@@ -14,13 +14,16 @@ const AboutSection = () => {
         <div className="flex text-[#edf1f4] w-full">
           <div className="flex flex-col md:flex-row">
             <ul className="list-disc pl-2 mr-8">
+              <li>NLP</li>
+              <li>Data Analysis</li>
+              <li>Neural Networks</li>
+              <li>Machine Learning</li>
               <li>React.js</li>
               <li>Node.js</li>
               <li>Express.js</li>
-              <li>MongoDB</li>
-              <li>MySQL</li>
             </ul>
             <ul className="list-disc pl-2 mr-8">
+              <li>MongoDB</li>
               <li>PostgreSQL</li>
               <li>Next.js</li>
               <li>Redux</li>
@@ -29,6 +32,7 @@ const AboutSection = () => {
             </ul>
           </div>
           <ul className="list-disc pl-2 mr-8">
+            <li>MySQL</li>
             <li>Java Script</li>
             <li>Sequelize</li>
             <li>Mongoose</li>
