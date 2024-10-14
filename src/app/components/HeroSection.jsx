@@ -7,8 +7,8 @@ import Link from "next/link";
 const HeroSection = () => {
   const [textColor, setTextColor] = useState("text-white");
   const handleDownload = () => {
-    const fileUrl = "/MHD MOAZ TELLO _2.pdf";
-    const fileName = "Mhd Moaz Tello.pdf";
+    const fileUrl = "/YaserAlsamsam.pdf";
+    const fileName = "YaserAlsamsam.pdf";
     const link = document.createElement("a");
     link.href = fileUrl;
     link.download = fileName;
@@ -47,7 +47,7 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 1500,
-                "Moaz",
+                "Yaser",
                 () =>
                   setTextColor(
                     // "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
@@ -64,15 +64,7 @@ const HeroSection = () => {
 
                 1500,
                 () => setTextColor("text-white"),
-                "Mobile Developer",
-                () =>
-                  setTextColor(
-                    // "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
-                    "text-primary-500"
-                  ),
-                1500,
-                () => setTextColor("text-white"),
-                "UI/UX Designer",
+                "Backend Developer",
                 () =>
                   setTextColor(
                     // "text-transparent bg-clip-text bg-gradient-to-r from-primary-200 via-primary-500 to-primary-700"
@@ -102,7 +94,7 @@ const HeroSection = () => {
           </h5>
           <div className="w-full grid md:grid-cols-2 gap-0">
             <Link
-              href="https://www.linkedin.com/in/mmt-tello-9b0a4026a/"
+              href="https://www.linkedin.com/in/yaser-alsamsam-47a0b331b"
               target="_blank"
               className="px-10 py-3 max-h-[50px] flex justify-center items-center w-full rounded-full bg-gradient-to-br from-primary-800 via-primary-500 to-primary-200 text-white hover:text-slate-300 outline-none border-none"
             >
@@ -126,7 +118,7 @@ const HeroSection = () => {
         >
           <div className="w-[240px] h-[300px] relative lg:w-[340px] lg:h-[400px] rounded-full">
             <Image
-              src="/images/moaz.jpeg"
+              src="/images/yaser.jpeg"
               // src="/images/hero-image.png"
               alt="moaz avatar"
               // width={500}

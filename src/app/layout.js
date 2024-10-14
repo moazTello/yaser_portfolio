@@ -13,8 +13,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Mhd Moaz Tello",
-  description: "moaz tello portfolio",
+  title: "Yaser AlSamsam",
+  description: "yaser alsamsam portfolio",
 };
 
 export default function RootLayout({ children }) {

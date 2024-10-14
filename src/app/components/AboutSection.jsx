@@ -18,15 +18,15 @@ const AboutSection = () => {
               <li>Data Analysis</li>
               <li>Neural Networks</li>
               <li>Machine Learning</li>
-              <li>React.js</li>
+              <li>XAMP</li>
               <li>Node.js</li>
               <li>Express.js</li>
             </ul>
             <ul className="list-disc pl-2 mr-8">
               <li>MongoDB</li>
               <li>PostgreSQL</li>
-              <li>Next.js</li>
-              <li>Redux</li>
+              <li>Php</li>
+              <li>Laravel</li>
               <li>HTML</li>
               <li>CSS</li>
             </ul>
@@ -36,7 +36,7 @@ const AboutSection = () => {
             <li>Java Script</li>
             <li>Sequelize</li>
             <li>Mongoose</li>
-            <li>Tailwind</li>
+            <li>JSON</li>
             <li>Bootstrap</li>
           </ul>
         </div>
@@ -58,10 +58,10 @@ const AboutSection = () => {
           </li>
           <li className="mt-5">
             <p className="text-lg font-semibold">
-              React.js, Java Script, HTML, CSS
+              Laravel
             </p>
             <p className="text-md text-primary-500 font-bold">New Horizons</p>
-            <p className="text-sm text-[#ADB7BE]">2020 - 2023</p>
+            <p className="text-sm text-[#ADB7BE]">2022 - 2023</p>
           </li>
         </ul>
       ),
@@ -72,14 +72,9 @@ const AboutSection = () => {
       content: (
         <ul className="list-disc text-[#edf1f4] pl-1">
           <li>
-            <p className="text-lg font-semibold">Java Script, HTML, CSS</p>
+            <p className="text-lg font-semibold">Laravel</p>
             <p className="text-md text-primary-500 font-bold">New Horizons</p>
             <p className="text-sm text-[#ADB7BE]">2020 - 2021</p>
-          </li>
-          <li className="mt-5">
-            <p className="text-lg font-semibold">React.js Development</p>
-            <p className="text-md text-primary-500 font-bold">New Horizons</p>
-            <p className="text-sm text-[#ADB7BE]">2022 - 2023</p>
           </li>
         </ul>
       ),
@@ -123,7 +118,7 @@ const AboutSection = () => {
           <p className="text-base text-[#ADB7BE] lg:text-lg">
             I am a full stack web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, Next.js, React, Redux, Node.js, Express,
+            working with JavaScript, Node.js, Express,
             PostgreSQL, Sequelize, HTML, CSS, and Git. I am a quick learner and
             I am always looking to expand my knowledge and skill set. I am a
             team player and I am excited to work with others to create amazing
@@ -142,12 +137,12 @@ const AboutSection = () => {
             >
               Education
             </TabButton>
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("experience")}
               active={tab === "experience"}
             >
               Experience
-            </TabButton>
+            </TabButton> */}
             {/* <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
@@ -166,9 +161,9 @@ const AboutSection = () => {
           transition={{ duration: 5 }}
         >
           <Image
-            src="/images/About_macbook_port.jpg"
-            width={500}
-            height={650}
+            src="/images/About_Image.jpg"
+            width={800}
+            height={900}
             // objectFit="cover" objectPosition="center"
             // layout="fill"
             alt="About"

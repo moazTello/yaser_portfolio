@@ -32,7 +32,7 @@ const Navbar = () => {
           onClick={() => scrollToSection("home")}
           className="text-2xl md:text-5xl ext-white font-semibold"
         >
-          <Image src="/images/Logo.svg" width={120} height={50} alt="logo" />
+          <Image src="/images/Logo.svg" width={80} height={30} alt="logo" />
         </button>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
