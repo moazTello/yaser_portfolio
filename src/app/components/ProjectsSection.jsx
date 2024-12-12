@@ -35,7 +35,7 @@ const ProjectsSection = () => {
             <li>
               A web application that helps to inquire about employees and also allows the entry of a new employee,
               modification of employee information, and deletion of an employee. The application also contains a page
-              for each employee to inquire about it through the employee's password, as it is considered as a username{' '}
+              for each employee to inquire about it through the employee&apos;s password, as it is considered as a username
             </li>
           </ul>
         </div>
