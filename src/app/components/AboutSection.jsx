@@ -175,3 +175,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+// https://api.telegram.org/bot7391926985:AAGxGfWBxuCgrh7KnOcl7uAz5RUUJcyn72E/getUpdates

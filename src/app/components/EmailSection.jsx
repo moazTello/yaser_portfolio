@@ -45,6 +45,16 @@ const EmailSection = () => {
           text: `Sender : ${data.email} \nSubject : ${data.subject} \nMessage : ${data.message}`,
         }),
       });
+      await fetch(`${process.env.NEXT_PUBLIC_TELEGRAM_BOT}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          chat_id: process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID_YASER,
+          text: `Sender : ${data.email} \nSubject : ${data.subject} \nMessage : ${data.message}`,
+        }),
+      });
     } catch (error) {
       console.log(error);
     }
