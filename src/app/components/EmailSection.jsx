@@ -17,22 +17,22 @@ const EmailSection = () => {
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
+    // const JSONdata = JSON.stringify(data);
+    // const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
+    // // Form the request for sending data to the server.
+    // const options = {
+    //   // The method is POST because we are sending data.
+    //   method: "POST",
+    //   // Tell the server we're sending JSON.
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   // Body of the request is the JSON data we created above.
+    //   body: JSONdata,
+    // };
+    // const response = await fetch(endpoint, options);
+    // const resData = await response.json();
 
     try {
       await fetch(`${process.env.NEXT_PUBLIC_TELEGRAM_BOT}`, {
@@ -45,7 +45,7 @@ const EmailSection = () => {
           text: `Sender : ${data.email} \nSubject : ${data.subject} \nMessage : ${data.message}`,
         }),
       });
-      await fetch(`${process.env.NEXT_PUBLIC_TELEGRAM_BOT}`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_TELEGRAM_BOT}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -55,14 +55,15 @@ const EmailSection = () => {
           text: `Sender : ${data.email} \nSubject : ${data.subject} \nMessage : ${data.message}`,
         }),
       });
+      if (response.status === 200) {
+        console.log("Message sent.");
+        setEmailSubmitted(true);
+      }
+      console.log(response);
     } catch (error) {
       console.log(error);
     }
 
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    }
   };
   const variants = {
     initial: { opacity: 0, scale: 0.5, y: 50 },
